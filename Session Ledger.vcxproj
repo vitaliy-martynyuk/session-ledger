@@ -153,6 +153,7 @@
   <ItemGroup>
     <ClInclude Include="consts\consts.h" />
     <ClInclude Include="globals\globals.h" />
+    <ClInclude Include="helpers\compare.h" />
     <ClInclude Include="helpers\validate.h" />
     <ClInclude Include="io\io.h" />
   </ItemGroup>

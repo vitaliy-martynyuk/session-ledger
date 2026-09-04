@@ -4,8 +4,7 @@
 namespace Globals
 {
 	int id();
-	void addTotalHours(double hours = 0.0);
-	void addLongShiftTotalHours(double hours = 0.0);
+	void recordEntry(double hours);
 	int getTotalEntries();
 	double getTotalHours();
 	double getLongShiftAverageHours();

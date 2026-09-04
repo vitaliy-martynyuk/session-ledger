@@ -1,4 +1,6 @@
 #include "globals.h"
+#include "../helpers/compare.h"
+#include "../consts/consts.h"
 
 namespace Globals
 {
@@ -12,16 +14,13 @@ namespace Globals
 		return ++sId;
 	}
 
-	void addTotalHours(double hours)
+	void recordEntry(double hours)
 	{
 		sTotal += hours;
-	}
-
-	void addLongShiftTotalHours(double hours)
-	{
-		sTotal += hours;
-		sLongShiftTotal += hours;
-		++sLongShiftAmount;
+		if (Compare::doubles::isGreaterOrEqual(hours, Consts::minLongShiftHours)) {
+			sLongShiftTotal += hours;
+			++sLongShiftAmount;
+		}
 	}
 
 	int getTotalEntries()
