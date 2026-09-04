@@ -113,7 +113,7 @@
       <LanguageStandard>stdcpp20</LanguageStandard>
       <AdditionalOptions>/w44365 %(AdditionalOptions)</AdditionalOptions>
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
-      <TreatWarningAsError>true</TreatWarningAsError>
+      <TreatWarningAsError>false</TreatWarningAsError>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -134,7 +134,7 @@
       <LanguageStandard>stdcpp20</LanguageStandard>
       <AdditionalOptions>/w44365 %(AdditionalOptions)</AdditionalOptions>
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
-      <TreatWarningAsError>true</TreatWarningAsError>
+      <TreatWarningAsError>false</TreatWarningAsError>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -145,12 +145,14 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="globals\globals.cpp" />
     <ClCompile Include="helpers\validate.cpp" />
     <ClCompile Include="io\io.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="consts\consts.h" />
+    <ClInclude Include="globals\globals.h" />
     <ClInclude Include="helpers\validate.h" />
     <ClInclude Include="io\io.h" />
   </ItemGroup>

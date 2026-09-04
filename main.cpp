@@ -1,5 +1,6 @@
 #include "io/io.h"
 #include "helpers/validate.h"
+#include "globals/globals.h"
 #include <iostream>
 
 int main()
@@ -32,10 +33,12 @@ int main()
 		return EXIT_FAILURE;
 	}
 
-	Io::printEnrtyInfo(1, entry1);
-	Io::printEnrtyInfo(2, entry2);
-	Io::printEnrtyInfo(3, entry3);
-	Io::printEnrtyInfo(4, entry4);
+	Io::printEnrtyInfo(Globals::id(), entry1);
+	Io::printEnrtyInfo(Globals::id(), entry2);
+	Io::printEnrtyInfo(Globals::id(), entry3);
+	Io::printEnrtyInfo(Globals::id(), entry4);
+
+	Io::printSessionSummary(Globals::getTotalEntries(), Globals::getTotalHours(), Globals::getLongShiftAverageHours());
 
 	return EXIT_SUCCESS;
 }
