@@ -145,10 +145,13 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="helpers\validate.cpp" />
     <ClCompile Include="io\io.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="consts\consts.h" />
+    <ClInclude Include="helpers\validate.h" />
     <ClInclude Include="io\io.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
