@@ -3,7 +3,7 @@
 
 namespace Validate
 {
-	bool isEntryHoursValid(double hours, double eps = 1e-9);
+	bool isEntryHoursValid(double hours);
 }
 
 #endif

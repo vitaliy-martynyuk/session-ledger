@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="Session Ledger.vcxproj" />
+  <Project Path="Session Ledger.vcxproj" Id="c305cbe0-60a1-4875-a287-00af854be4df" />
 </Solution>
